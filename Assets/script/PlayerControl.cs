@@ -23,7 +23,7 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         hp = 5;
-        walkSpeed = 20;
+        walkSpeed = 15;
         playerRigid = GetComponent<Rigidbody2D>();
         dashTimer = 0;
         dashCnt = 0;
