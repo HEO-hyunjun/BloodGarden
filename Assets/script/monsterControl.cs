@@ -165,7 +165,7 @@ public class monsterControl : MonoBehaviour
         if (isArrived(FinalNodeList[cnt]))
         { 
             cnt++;
-            Debug.Log('a');
+            //Debug.Log('a');
             pathFinding();
         }
         if (FinalNodeList.Count <= cnt)

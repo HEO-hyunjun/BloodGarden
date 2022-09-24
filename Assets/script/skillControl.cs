@@ -20,6 +20,7 @@ public class skillControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(info.delta);
         info.delta += Time.deltaTime;
         if(info.delta>1)
         {
