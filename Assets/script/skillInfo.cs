@@ -8,7 +8,7 @@ public class skillInfo
 {
 
     public float damage = 1;
-    public float delta;
+    public float maintainTime;
     public float skillWidth;
     public float skillHeight;
     public int skillID;
@@ -32,7 +32,7 @@ public class skillInfo
         damage = skill.damage;
         skillWidth = skill.skillWidth;
         skillHeight = skill.skillHeight;
-        delta = skill.delta;
+        maintainTime = skill.maintainTime;
 
     }
     public float getSkillDistance()

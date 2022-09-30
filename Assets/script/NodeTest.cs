@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class skillControl : MonoBehaviour
+public class NodeTest : MonoBehaviour
 {
     skillInfo info;
     float destroyTime = 0;
+
     // Start is called before the first frame update
 
     public void setSkillID(int id)

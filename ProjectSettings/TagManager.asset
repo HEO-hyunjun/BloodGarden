@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
   - 
@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Wall
+    uniqueID: 3394240245
+    locked: 0
   - name: background
     uniqueID: 3680175913
     locked: 0
@@ -52,4 +55,7 @@ TagManager:
     locked: 0
   - name: skill
     uniqueID: 405899181
+    locked: 0
+  - name: UI
+    uniqueID: 2281735355
     locked: 0

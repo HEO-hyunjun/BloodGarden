@@ -1,7 +1,7 @@
 {
-    "skillID": 0,
+    "skillID": 1,
     "damage": 1,
-    "delta": 0,
+    "maintainTime": 1,
     "skillWidth": 6,
     "skillHeight": 4
 }

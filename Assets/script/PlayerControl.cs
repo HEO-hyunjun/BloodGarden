@@ -66,6 +66,7 @@ public class PlayerControl : MonoBehaviour
         skillInfo skillInfo = new skillInfo(skillID);
         skillComp.setSkillID(skillID);
         skill.transform.position = mousePos * skillInfo.getSkillDistance() + playerRigid.position;
+        Debug.Log(skillInfo.skillWidth);
         // update끝나면 인스턴스 생성이라 보면 될듯 그래서 여기에서 변수 넘겨주면됨
     }
 
@@ -85,7 +86,7 @@ public class PlayerControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            skill(1);
+            skill(2);
         }
 
         if (dashTimer >= 8f)

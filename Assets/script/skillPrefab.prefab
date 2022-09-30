@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 310552919878559515}
   - component: {fileID: 4761447836663717676}
   - component: {fileID: 8512962880476595650}
-  - component: {fileID: 2981744157405424112}
   m_Layer: 0
   m_Name: skillPrefab
   m_TagString: Untagged
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 405899181
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -123,17 +122,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 126d9bb7af0c743e4a92a35c08768d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2981744157405424112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438837576095572279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c28d2a158eb4a718215d9830d3a42a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
