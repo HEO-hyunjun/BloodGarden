@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Status
 {
-	public class Status : MonoBehaviour, IStatus
+	public class Status : MonoBehaviour, IStatus, IDamageable
 	{
 		// 기본 상태
 		[SerializeField]
@@ -43,7 +43,7 @@ namespace Status
 			_nowSpeed = _speed;
 		}
 
-		public void Attacked(float damage)
+		public void Damaged(float damage)
 		{
 			_nowHp -= damage;
 			if (_nowHp < 0)

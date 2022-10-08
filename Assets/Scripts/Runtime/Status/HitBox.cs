@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Status
 {
-	public class HitBox : MonoBehaviour, IAttack
+	public class HitBox : MonoBehaviour, IAttackable
 	{
 		[SerializeField]
 		private string _targetTag;
@@ -16,16 +16,16 @@ namespace Status
 		private bool _isTargetInside = false;
 		private GameObject _target;
 		
-		IEnumerator Attacking(IStatus target)
+		IEnumerator Attacking(IDamageable target)
 		{
 			while(_isTargetInside && _target != null)
 			{
-				target.Attacked(_damage);
+				target.Damaged(_damage);
 				yield return new WaitForSeconds(_attackInterval);
 			}
 		}
 
-		public void Attack(IStatus target)
+		public void Attack(IDamageable target)
 		{
 			StartCoroutine(Attacking(target));
 		}
@@ -36,7 +36,7 @@ namespace Status
 			{
 				_isTargetInside = true;
 				_target = collision.gameObject;
-				Attack(_target.GetComponent<IStatus>());
+				Attack(_target.GetComponent<IDamageable>());
 			}
 		}
 
