@@ -2,24 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using BeatEvent;
+using Beat;
 
 public class TestText : MonoBehaviour
 {
-    BeatEventManager beatEventManager;
-    TextMeshPro text;
+    public TextMeshProUGUI textUI;
+    public float offset = 0f;
 
     public void Start()
     {
-        beatEventManager = BeatEventManager.Instance;
-        text = gameObject.GetComponent<TextMeshPro>();
+        BeatEvent beatEvent = new BeatEvent();
+        beatEvent.BeatEventAction = Action;
+        beatEvent.Offset = offset;
+        BeatEventManager.Instance.RegisterBeatEvent(beatEvent);
     }
+
+    public void Action()
+	{
+        textUI.text = Time.time.ToString();
+	}
 
     public void Update()
     {
-        if (beatEventManager.beatOn)
-            text.enabled = true;
+        if (BeatEventManager.Instance.beatOn)
+            textUI.enabled = true;
         else
-            text.enabled = false;
+            textUI.enabled = false;
     }
 }
